@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.test.digvijay.pulseratenotifier.fragment.HomeFragment"
+    android:paddingLeft="2dp"
+    android:background="@color/new_background">
+
+    <RelativeLayout
+        android:id="@+id/current_pulse_rate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/live_graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/linear_layout" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/pulse_rate_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80"
+                android:textSize="50dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.sevenheaven.iosswitch.ShSwitchView
+                android:id="@+id/pulse_rate_switch_view"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                app:outerStrokeWidth="3dp"
+                app:tintColor="#895ea7" />
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/buzzer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buzzer"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_show_pulse_rate"-->
+            <!--android:icon="@drawable/ic_heart_pulse"-->
+            <!--android:title="@string/show_pulse_rate"-->
+            <!--android:visible="false" />-->
+
+        <item
+            android:id="@+id/nav_show_analysis"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="@string/show_analysis"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_sync"
+            android:title="@string/sync_with_server"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_show_patients"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="@string/show_patients"
+            android:visible="true" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_details_black_24dp"
+            android:title="@string/about" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_register_or_login"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/register_or_login"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/logout"
+            android:visible="false"/>
+    </group>
+
+</menu>

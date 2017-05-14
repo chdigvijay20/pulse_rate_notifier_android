@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "959288127412",
+    "firebase_url": "https://pulseratenotifier.firebaseio.com",
+    "project_id": "pulseratenotifier",
+    "storage_bucket": "pulseratenotifier.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959288127412:android:8d6af3fabf6c8b95",
+        "android_client_info": {
+          "package_name": "com.test.digvijay.pulseratenotifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959288127412-r8o0rplnd5c02j6k5plnhssmgnplvpue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.test.digvijay.pulseratenotifier",
+            "certificate_hash": "1b786369595938f864895b1ed4dff4b322e549d9"
+          }
+        },
+        {
+          "client_id": "959288127412-esj156hg29h4i0l05rf9mbij3nlrhtmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHerlQUU-t1iic01qKHUFAtVO4hlHBLNc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959288127412-esj156hg29h4i0l05rf9mbij3nlrhtmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

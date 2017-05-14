@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.digvijay.pulseratenotifier.fragment.PatientDetailsFragment"
+    android:background="@color/new_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_details"
+                android:textSize="@dimen/title_text"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/device_id_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/form_field_text"
+                android:hint="@string/device_id"
+                android:maxLines="1"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_bluetooth_audio_black_24dp"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/birthdate_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/form_field_text"
+                android:hint="@string/date_of_birth"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="10dp"
+                android:focusable="false"/>
+
+            <RadioGroup
+                android:id="@+id/gender_radio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Gender"
+                    android:textSize="@dimen/form_field_text"
+                    android:textColor="@android:color/black"
+                    android:paddingRight="30dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio_button_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/human_male"
+                    android:drawablePadding="30dp"
+                    android:background="@drawable/rounded_corner"
+                    android:textSize="@dimen/form_field_text"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radio_button_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/human_female"
+                    android:drawablePadding="20dp"
+                    android:background="@drawable/rounded_corner"
+                    android:textSize="@dimen/form_field_text"
+                    android:layout_weight="1"
+                />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:text="@string/save"
+                android:gravity="center"
+                android:textSize="@dimen/form_field_text"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_rounded_corner"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

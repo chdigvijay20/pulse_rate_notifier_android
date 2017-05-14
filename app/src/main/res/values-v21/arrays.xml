@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="active_dot_array">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </string-array>
+
+    <string-array name="inactive_dot_array">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </string-array>
+
+    <string-array name="role_array">
+        <item>@string/patient</item>
+        <item>@string/care_taker</item>
+        <item>@string/doctor</item>
+    </string-array>
+</resources>

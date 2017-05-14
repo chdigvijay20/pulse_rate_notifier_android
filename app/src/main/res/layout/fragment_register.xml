@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.digvijay.pulseratenotifier.fragment.RegisterFragment"
+    android:background="@color/new_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider">
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textSize="@dimen/title_text"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_color"
+                android:paddingTop="10dp"
+                />
+
+            <EditText
+                android:id="@+id/full_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/form_field_text"
+                android:hint="@string/full_name"
+                android:maxLines="1"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:drawablePadding="10dp" />
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/form_field_text"
+                android:hint="@string/email"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/contact_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/form_field_text"
+                android:hint="@string/contact"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:id="@+id/password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/form_field_text"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="10dp"/>
+
+            <Spinner
+                android:id="@+id/role_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_corner"
+                android:textSize="@dimen/form_field_text" >
+            </Spinner>
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/form_field_height"
+                android:text="@string/proceed"
+                android:gravity="center"
+                android:textSize="@dimen/form_field_text"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_rounded_corner"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp" />
+
+            <TextView
+                android:id="@+id/have_account_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/have_account"
+                android:textColor="@color/text_color"
+                android:background="@null"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/form_field_text"
+                android:paddingBottom="@dimen/twentydp"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
